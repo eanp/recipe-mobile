@@ -1,7 +1,11 @@
+/**
+ * @format
+ */
+
 import {AppRegistry} from 'react-native';
 import Router from './src/routers';
 import {name as appName} from './app.json';
-import React,{ Component} from 'react';
+import React,{Component} from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import storage from "./src/storages/store"

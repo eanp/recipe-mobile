@@ -1,5 +1,3 @@
-// In App.js in a new project
-
 import * as React from 'react';
 import {View, Text, Button, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
@@ -7,9 +5,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {useDispatch, useSelector} from 'react-redux';
 import {login, logout} from '../storages/action/auth';
 
-function LoginScreen({navigation}) {
+function LoginScreen() {
   const dispatch = useDispatch();
-  const auth = useSelector(state => state.auth);
+  const auth = useSelector((state) => state.auth);
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text style={{color: 'red'}}>ProfileScreen Screen</Text>
@@ -29,7 +27,7 @@ function LoginScreen({navigation}) {
     </View>
   );
 }
-function HomeScreen({navigation}) {
+function HomeScreen() {
   const dispatch = useDispatch();
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -51,7 +49,7 @@ function HomeScreen({navigation}) {
 const Stack = createNativeStackNavigator();
 
 function Router() {
-  const auth = useSelector(state => state.auth);
+  const auth = useSelector((state) => state.auth);
   return (
     <NavigationContainer>
       <Stack.Navigator>
