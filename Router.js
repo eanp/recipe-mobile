@@ -91,7 +91,7 @@ function Menu() {
   );
 }
 
-function App() {
+function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={({ route }) => ({
@@ -126,4 +126,4 @@ function App() {
   );
 }
 
-export default App;
+export default Router;
